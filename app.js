@@ -11,6 +11,9 @@ const hpp = require("hpp");
 const rateLimit = require("express-rate-limit");
 
 // DATABASE CONNECTION
+
+const app = new express();
+
 mongoose
     .connect(process.env.MONGO_URI)
     .then((res) => {
@@ -19,9 +22,6 @@ mongoose
     .catch((err) => {
         console.log(err);
     });
-
-
-const app = new express();
 
 app.use(cookieParser());
 app.use(mongoSanitize());
