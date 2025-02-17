@@ -1,0 +1,29 @@
+Backed Project Create Checklist
+
+
+- npm init -y (Project Init)
+- npm install express dotenv (Core Library)
+- npm install helmet express-mongo-sanitize xss-clean hpp (Security Middleware)
+- npm install cors cookie-parser (CORS and Cookie Handling)
+- npm install express-rate-limit (Rate Limiter)
+- npm install mongoose jsonwebtoken (DataBase and Authentication Tool)
+- npm install axios form-data nodemailer (Additional Utility)
+- npm install --save-dev nodemon (Dev Dependency)
+- {"start": "node index.js","dev": "nodemon index.js”} (SCRIPT ADD FOR NODEMON)
+- index.js ⇒ entry point of Backend
+- app ⇒ express app instance
+- .env ⇒ credentials (PORT, MONGO_URI)
+- 
+├── /src
+│   ├── /config
+│   ├── /services         
+│   ├── /models         
+│   ├── /routes         
+│   ├── /controllers    
+│   ├── /middlewares    
+│   └── /utils          
+├── .env
+├── app.js 
+├── index.js
+    
+- DB connect ⇒ mongodb atlas string connection
